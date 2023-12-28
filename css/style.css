@@ -65,7 +65,6 @@ textarea {
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
   text-align: center; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
@@ -137,7 +136,7 @@ textarea {
   width: 92%; }
 
 .btn {
-  background: #fff;
+  background:lightblue;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -185,7 +184,10 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background-image:url(../assets/jpeg/city.jpg);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -497,9 +499,9 @@ textarea {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: #000;
-  background: #fff;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
+  background: transparent;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+ }
   .header__content {
     display: flex;
     align-items: center;
@@ -538,7 +540,9 @@ textarea {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    color:white;
+   }
   .header__links {
     display: flex; }
     @media only screen and (max-width: 37.5em) {
@@ -548,7 +552,7 @@ textarea {
     padding: 2.2rem 3rem;
     display: inline-block;
     font-size: 1.6rem;
-    color: #333;
+    color:white;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
@@ -693,6 +697,12 @@ textarea {
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
 
+  .past-main {
+    background-color:black;
+    color:#444;
+    transition:0.5s;
+  }
+
 @keyframes wheel {
   to {
     opacity: 0;
@@ -702,3 +712,4 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
